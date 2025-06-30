@@ -1,0 +1,218 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    padding: 40px 20px;
+    overflow-x: hidden;
+}
+
+.dashboard-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 50px;
+}
+.title-container{
+    background-color: #d4e4f4;
+    padding-bottom: 0rem;
+    margin-top: -40px;
+    width: 120%;
+    margin-left: -80px;
+    text-align: center;
+    margin-bottom: -2rem;
+}
+/* Flex container layout */
+.dashboard-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* Form styling */
+.custom-form {
+    max-width: 340px;   /* Increased from 450px to 550px */
+    margin-right: auto;   /* Push form to left */
+}
+
+form label {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.small-select {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+}
+
+.custom-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+    background-color: #d4e4f4;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+}
+
+.custom-btn:hover {
+    background-color: #a9cfe5;
+}
+
+.no-radius {
+    border-radius: 0 !important;
+}
+
+/* KPI Card layout */
+.kpi-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.kpi-card {
+    width: 210px;
+    font-size: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: none;
+    background-color: #ffffff;
+    transition: transform 0.2s;
+    padding: 12px;
+    border-radius: 0px;
+    margin-top: 3rem;
+}
+
+.kpi-card:hover {
+    transform: translateY(-4px);
+}
+
+.kpi-card h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+
+.kpi-card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+/* General card styling */
+.card {
+    border: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    background-color: #ffffff;
+}
+
+.card h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Chart area spacing */
+.row.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    .dashboard-flex {
+        flex-direction: column;
+    }
+
+    .custom-form {
+        width: 100%;
+    }
+
+    .kpi-cards {
+        justify-content: space-around;
+    }
+
+    .kpi-card {
+        width: 100%;
+    }
+}
+
+.container-1 {
+    max-width: 920px;
+    margin-left: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    overflow: hidden;         /* Hide extra content if any */
+}
+
+.sub-container-1 {
+    padding: 10px 15px;       /* Less padding */
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.chart1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.container-2 {
+    background-color: white;
+    position: absolute;
+    margin-left: 920px;
+    margin-top: -491px;
+    margin-bottom: 350px;
+    width: 30%;
+    height: 68.5%;
+
+}
+.container-3 {
+    margin-left: -10px;
+    max-width: 918px;
+    padding: 0;
+    margin-top: -68px;
+    overflow: hidden;         /* Hide extra content if any */
+}
+
+.sub-container-3 {
+    margin-top: 60px;
+    padding: 10px 15px;       /* Less padding */
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+.container-4 {
+    background-color: white;
+    position: absolute;
+    margin-left: 920px;
+    margin-top: -470px;
+    margin-bottom: 350px;
+    width: 30%;
+    height: 68.3%;
+}
+
+.container-5 {
+    margin-left: -10px;
+    max-width: 700px;
+    padding: 0;
+    margin-top: 12px;
+    overflow: hidden;         /* Hide extra content if any */
+}
+.container-6 {
+    background-color: white;
+    margin-left: 705px;
+    position: absolute;
+    padding: 0;
+    margin-top: -390px;
+    overflow: hidden;         /* Hide extra content if any */
+    width: 45%;
+    height: 56.8%;
+}
+
+.footer {
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
