@@ -137,70 +137,80 @@ form label {
     }
 }
 
+.chart-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    flex-wrap: wrap; /* Stack on smaller screens */
+    margin-bottom: -10px;
+}
+
+/* Left bar chart container */
 .container-1 {
-    max-width: 920px;
-    margin-left: 0;
+    flex: 1;
+    max-width: 64%;
+    min-width: 300px;
     padding: 0;
-    margin-bottom: 20px;
-    overflow: hidden;         /* Hide extra content if any */
 }
 
-.sub-container-1 {
-    padding: 10px 15px;       /* Less padding */
-    background-color: #ffffff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.chart1 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
+/* Right donut chart container */
 .container-2 {
-    background-color: white;
-    position: absolute;
-    margin-left: 920px;
-    margin-top: -491px;
-    margin-bottom: 350px;
-    width: 30%;
-    height: 68.5%;
-
-}
-.container-3 {
-    margin-left: -10px;
-    max-width: 918px;
-    padding: 0;
-    margin-top: -68px;
-    overflow: hidden;         /* Hide extra content if any */
-}
-
-.sub-container-3 {
-    margin-top: 60px;
-    padding: 10px 15px;       /* Less padding */
+    flex: 1;
+    margin-left: 350px;
+    max-width: 35%;
+    min-width: 280px;
+    padding: 10px 15px;
     background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    height: 450px;          /* ✅ Fixed height */
+    overflow: hidden;
+    align-self: flex-start;  /* ensures it's aligned to the top-left */
+    margin-right: auto;
 }
 
+.chart-row-2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 1px;
+}
 
+/* Left bar chart */
+.container-3 {
+    flex: 1;
+    max-width: 64%;
+    min-width: 300px;
+    padding: 0;
+}
+
+/* Right donut chart */
 .container-4 {
-    background-color: white;
-    position: absolute;
-    margin-left: 920px;
-    margin-top: -470px;
-    margin-bottom: 350px;
-    width: 30%;
-    height: 68.3%;
+    flex: 1;
+    margin-left: 350px;
+    max-width: 35%;
+    min-width: 280px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    height: 450px;          /* ✅ Fixed height */
+    overflow: hidden;
+    align-self: flex-start;  /* ensures it's aligned to the top-left */
+    margin-right: auto;
 }
 
 .container-5 {
     margin-left: -10px;
-    max-width: 700px;
+    max-width: 668px;
     padding: 0;
     margin-top: 12px;
     overflow: hidden;         /* Hide extra content if any */
 }
 .container-6 {
     background-color: white;
-    margin-left: 705px;
+    margin-left: 670px;
     position: absolute;
     padding: 0;
     margin-top: -390px;
