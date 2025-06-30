@@ -173,7 +173,7 @@ form label {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
+    gap: 5px;
     flex-wrap: wrap;
     margin-bottom: 1px;
 }
