@@ -15,7 +15,7 @@ from utils import (
 app = Flask(__name__)
 
 # Load data once
-df = pd.read_csv(r"S:\Aditya\Projects\Oil Production Flask Dashboard\Datasets\Oil_Production_PowerBI_Ready.csv")
+df = pd.read_csv("Oil_Production_PowerBI_Ready.csv")
 df.dropna()
 
 @app.route("/", methods=["GET", "POST"])
