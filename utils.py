@@ -13,12 +13,16 @@ def filter_data(df, state=None, region=None):
     return filtered
 
 def calculate_total_production(filtered_df):
+    if filtered_df.empty:
+        return 0  # or return "No data"
     total = ceil(filtered_df['Production'].sum())
-    return format_number(total, locale='en_IN')
+    return total
 
 def calculate_avg_production(filtered_df):
+    if filtered_df.empty:
+        return 0  # or return "No data"
     total = ceil(filtered_df['Production'].mean())
-    return format_number(total, locale='en_IN')
+    return total
 
 
 def count_unique_states(filtered_df):
@@ -59,7 +63,10 @@ def generate_top5_states_chart(df):
         xaxis_title='State',
         yaxis_title='Total Production (KL)',
         plot_bgcolor='white',
-        paper_bgcolor='white'
+        paper_bgcolor='white',
+
+
+
     )
     fig.update_traces(textposition='outside')
     config = {
@@ -102,8 +109,6 @@ def generate_bottom5_states_chart(df):
         yaxis_title='Total Production (KL)',
         plot_bgcolor='white',
         paper_bgcolor='white',
-        width=880,
-        height=450,
     )
     fig.update_traces(textposition='outside')
 
